@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nuevo_libro">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/datos_nuevo_libro"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/titulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    <EditText
+        android:id="@+id/inputTitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/lblTitulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblTitulo"
+        app:layout_constraintTop_toTopOf="@+id/lblTitulo"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <TextView
+        android:id="@+id/lblAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/autor"
+        app:layout_constraintStart_toStartOf="@+id/lblTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitulo" />
+
+    <EditText
+        android:id="@+id/inputAutor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/lblAutor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblAutor"
+        app:layout_constraintTop_toTopOf="@+id/lblAutor"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <TextView
+        android:id="@+id/lblIsbn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/isbn"
+        app:layout_constraintStart_toStartOf="@+id/lblAutor"
+        app:layout_constraintTop_toBottomOf="@+id/lblAutor" />
+
+    <EditText
+        android:id="@+id/inputIsbn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/lblIsbn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblIsbn"
+        app:layout_constraintTop_toTopOf="@+id/lblIsbn"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <TextView
+        android:id="@+id/lblEditorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/editorial"
+        app:layout_constraintStart_toStartOf="@+id/lblIsbn"
+        app:layout_constraintTop_toBottomOf="@+id/lblIsbn" />
+
+    <EditText
+        android:id="@+id/inputEditorial"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/lblEditorial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblEditorial"
+        app:layout_constraintTop_toTopOf="@+id/lblEditorial"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <TextView
+        android:id="@+id/lblNumPaginas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/num_paginas"
+        app:layout_constraintStart_toStartOf="@+id/lblEditorial"
+        app:layout_constraintTop_toBottomOf="@+id/lblEditorial" />
+
+    <EditText
+        android:id="@+id/inputNumPaginas"
+        android:layout_width="65dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:ems="4"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/lblNumPaginas"
+        app:layout_constraintStart_toEndOf="@+id/lblNumPaginas"
+        app:layout_constraintTop_toTopOf="@+id/lblNumPaginas"
+        app:layout_constraintVertical_bias="0.384" />
+
+    <CheckBox
+        android:id="@+id/checkLeido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="@string/leido"
+        app:layout_constraintBottom_toBottomOf="@+id/inputNumPaginas"
+        app:layout_constraintStart_toEndOf="@+id/inputNumPaginas"
+        app:layout_constraintTop_toTopOf="@+id/inputNumPaginas" />
+
+    <Button
+        android:id="@+id/btnInsertar"
+        android:layout_width="169dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/insertar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblNumPaginas"
+        android:onClick="insertar"/>
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="167dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:text="@string/cancelar"
+        app:layout_constraintStart_toEndOf="@+id/btnInsertar"
+        app:layout_constraintTop_toTopOf="@+id/btnInsertar"
+        android:onClick="limpiar"/>
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/volver"
+        app:layout_constraintEnd_toEndOf="@+id/btnCancelar"
+        app:layout_constraintTop_toBottomOf="@+id/btnCancelar"
+        android:onClick="volver"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

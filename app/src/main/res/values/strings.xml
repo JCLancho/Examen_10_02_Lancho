@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Examen_10_02_Lancho</string>
+    <string name="menu_principal_titulo">--MENU PRINCIPAL--</string>
+    <string name="salir">SALIR</string>
+    <string name="el_tiempo_xml">EL TIEMPO (XML)</string>
+    <string name="bases_de_datos">BASES DE DATOS</string>
+    <string name="mi_base_de_datos_de_libros">Mi base de Datos de Libros</string>
+    <string name="listado_libros">LISTADO LIBROS</string>
+    <string name="buscar_libros_s">BUSCAR LIBROS(S)</string>
+    <string name="nuevo_libro">NUEVO LIBRO</string>
+    <string name="titulo">TITULO</string>
+    <string name="autor">AUTOR</string>
+    <string name="isbn">ISBN</string>
+    <string name="editorial">EDITORIAL</string>
+    <string name="num_paginas">NUM. PAGINAS</string>
+    <string name="leido">Leido</string>
+    <string name="insertar">INSERTAR</string>
+    <string name="cancelar">CANCELAR</string>
+    <string name="volver">VOLVER</string>
+    <string name="listado_de_libros">Listado de libros</string>
+    <string name="leidos">Leidos</string>
+    <string name="no_leidos">No Leidos</string>
+    <string name="todos_los_libros">Todos los libros</string>
+    <string name="datos_nuevo_libro">DATOS NUEVO LIBRO</string>
+    <string name="buscar_libros">Buscar Libros</string>
+    <string name="marca_la_opci_n_por_la_que_quieres_buscar">Marca la opción por la que quieres buscar</string>
+    <string name="opcion">OPCION</string>
+    <string name="buscar">BUSCAR</string>
+    <string name="eliminar">ELIMINAR</string>
+    <string name="libro_leido">Libro LEIDO</string>
+    <string name="libro_no_leido">Libro NO LEIDO</string>
+    <string name="vitoria">Vitoria</string>
+    <string name="donostia">Donostia</string>
+    <string name="bilbao">Bilbao</string>
+    <string name="elige">Elige</string>
+
+</resources>
